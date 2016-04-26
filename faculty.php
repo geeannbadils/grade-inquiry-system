@@ -21,7 +21,7 @@ if(isset($_POST['export']))
 {
 $_SESSION['subcode_export2']=@$_POST['sub_code'];
 $_SESSION['section_export2']=@$_POST['section'];
-    header("location:export2.php");
+    header("location:export2excel faculty.php");
 
 }
 $class_number=$_SESSION['class_number'];
