@@ -33,12 +33,12 @@ include "session.php";
 							{
 							$row3=mysqli_fetch_array($grade_test);
 							echo $row3['grade']."\n";
-			  			}
-			  			else
-			  			{
+			  				}
+			  				else
+			  				{
 							echo "no grade \n";
-		          }	   
+			        			}	   
 						}
-				  }
+					}
 				}
 ?>
