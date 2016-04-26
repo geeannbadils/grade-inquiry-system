@@ -31,7 +31,7 @@ $_SESSION['student_edit']=$_POST['student_no'];;
 }
 if(isset($_POST['delete'])){
 $_SESSION['student_delete']=$_POST['student_no'];
-    header("location:delete.php");
+    header("location:deleterecord.php");
 
 }
 if(isset($_POST['export'])){
