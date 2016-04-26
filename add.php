@@ -34,27 +34,23 @@ if(isset($_SESSION["class_number"]))
 			<img src="images/hg.png"/>
 			<p>Add Subject</p>
 
-								<form method="POST" >
-									<select name="subject">
-
-									 <?php
-									 /*SELECTING THE SUBJECT TABLE , THEN THE SUBJECT CODE WILL BE ECHO USING OPTION*/
-									$sub = mysqli_query($con,"SELECT * FROM subject");
-									while($tr=mysqli_fetch_array($sub))
-									{
-									?>
-				          			<option> <?php echo $tr ['subject_code']; ?> </option>
-													          
-							       	<?php
-					        		}
-									?>
-									</select>
-
-
-									<input type="submit" name="add">
+			<form method="POST" >
+				<select name="subject">
+				 <?php
+			 /*SELECTING THE SUBJECT TABLE , THEN THE SUBJECT CODE WILL BE ECHO USING OPTION*/
+				$sub = mysqli_query($con,"SELECT * FROM subject");
+				while($tr=mysqli_fetch_array($sub))
+				{
+				?>
+	      			<option> <?php echo $tr ['subject_code']; ?> </option>
+				<?php
+		   		}
+				?>
+				</select>
+				<input type="submit" name="add">
 									
-								</form>
-								</div>
-								</body>
-								</html>
+			</form>
+</div>
+</body>
+</html>
 							
