@@ -23,10 +23,11 @@ $delete=$_SESSION['student_delete'];
 		{
 		echo "File has been deleted.";
 		header("location:index.php");
-			}
-			else{
-				echo "No file has been deleted.";
-				header("location:index.php");
-				}
+		}
+		else
+		{
+		echo "No file has been deleted.";
+		header("location:index.php");
+		}
 
 ?>
